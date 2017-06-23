@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'djangobower',
     
     'main',
+    'users',
 ]
 
 MIDDLEWARE = [
