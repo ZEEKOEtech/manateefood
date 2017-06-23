@@ -1,0 +1,23 @@
+# This file is exec'd from settings.py, so it has access to and can
+# modify all the variables in settings.py.
+
+DEBUG = True
+
+ALLOWED_HOSTS = "*"
+
+# Make these unique, and don't share it with anybody.
+SECRET_KEY = 'add_a_random_key_here'
+
+DATABASES = {
+    'default': {
+        # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle"
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'myproject',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '',  # Set to empty string for default.
+    }
+}
+
+ACTIVATE_RAVEN = False

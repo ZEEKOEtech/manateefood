@@ -1,0 +1,39 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+		<head>
+
+				<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+				<meta name="title" content="{% trans 'Title' %}">
+				<meta name="description" content="{% trans 'Description' %}">
+				<meta name="keywords" content="{% trans 'Keywords' %}">
+				<meta name="author" content="CookZattol" />
+
+				<!-- Stylesheets
+				============================================= -->
+				<link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.css' %}">
+				<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+
+				<!-- Document Title
+				============================================= -->
+				<title>{% block title %}{% trans "Manateefood" %}{% endblock %}</title>
+
+		</head>
+
+		<body>
+
+				{% block content %}
+				{% endblock %}
+
+
+				<!-- JavaScripts
+				============================================= -->
+
+				{% block js %}
+                <script type="text/javascript" src="{% static 'jquery/dist/js/jquery.js' %}"></script>
+                <script type="text/javascript" src="{% static 'bootstrap/dist/js/bootstrap.js' %}"></script>
+                {% endblock %}
+
+		</body>
+</html>
